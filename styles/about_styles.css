@@ -1,0 +1,58 @@
+header {
+    background-color: #ff6361;
+
+}
+
+
+section {
+    background-color: white;
+
+}
+
+footer {
+    background-color: #003F5C;
+
+}
+
+section p {
+    color: black;
+}
+
+.hire_me_btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF6361;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+        
+}
+
+.exp_btn_2 {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #FFA600;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.me_img {
+    width: 200px;
+    height:200px;
+    border-radius: 200px ;
+}

@@ -1,0 +1,23 @@
+header {
+    background-color: #ff6361;
+
+}
+
+
+section {
+    background-color: white;
+
+}
+
+footer {
+    background-color: #003F5C;
+
+}
+
+section p {
+    color: black;
+}
+
+.logo img {
+    width: 100px;
+}
