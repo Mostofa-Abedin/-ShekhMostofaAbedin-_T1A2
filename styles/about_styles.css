@@ -1,9 +1,12 @@
 header {
     background-color: #ff6361;
-
 }
 
-
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 section {
     background-color: white;
 
