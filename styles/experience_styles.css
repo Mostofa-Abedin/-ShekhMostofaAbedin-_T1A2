@@ -48,7 +48,34 @@ nav {
 /* ------------------------------------------------------------------------- */
 /* Section styling */
 
+section {
+    
+}
 
+#exp_heading {
+    display: flex;
+    justify-content: center;
+    margin: 2dvh;
+}
+
+.exp_content {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    background-color:aquamarine;
+    margin: 5dvw;
+    flex: 1; /* Allow section to grow and push footer down */
+}
+
+.exp_summary p {
+    font-size: 1em;
+    color: black;
+}
+
+.pro_exp p {
+    font-size: 1em;
+    color: black;
+}
 /* -------------------------------------------------------------------------- */
 /* footer styling */
 
