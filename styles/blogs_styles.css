@@ -56,7 +56,7 @@ nav {
     padding: 40px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: #0056b3;
+    background-color: white;
 }
 .blog-heading{
     display: flex;
@@ -70,10 +70,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     margin: 20px 0px;
     flex-wrap: wrap;
-    background-color: #f33c3c;
+    background-color: white;
 }
  
 .blog-box{
@@ -81,7 +80,6 @@ nav {
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px 20px;
- 
 }
 .blog-img{
     width:100%;
@@ -124,6 +122,29 @@ nav {
     color: #c74242;
     transition: all ease 0.3s;
 }
+
+/* @media(max-width:1250px){
+ 
+    .blog-box{
+        width: 300px;
+    }
+} 
+@media(max-width:1100px){
+    .blog-box{
+        width:70%;
+    }
+}
+ 
+@media(max-width:550px){
+   
+    .blog-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog{
+        padding:20px;
+    }
+} */
 
 /* -------------------------------------------------------------------------- */
 /* footer styling */

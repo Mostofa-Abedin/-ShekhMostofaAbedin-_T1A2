@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    display: flex;
+    flex-direction: column;
+}
+
 /* Navbar styling */
 header {
     background-color: #ff6361;
@@ -48,7 +54,31 @@ nav {
 /* ------------------------------------------------------------------------- */
 /* Section styling */
 
+section {
+    Display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10dvw;
+    flex: 1; /* Allow section to grow and push footer down */
+    background-color: aquamarine;
+}
 
+.left_para {
+    display:flex;
+    flex-direction:column;
+    gap: 50px;
+    align-items:flex-start;
+    background-color: lightblue;
+}
+
+.right_form {
+    display:flex;
+    flex-direction:column;
+    gap: 50px;
+    align-items:flex-start;
+    background-color:salmon;
+
+}
 /* -------------------------------------------------------------------------- */
 /* footer styling */
 
