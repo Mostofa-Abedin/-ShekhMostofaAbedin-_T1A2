@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    display: flex;
+    flex-direction: column;
+}
+
 /* Navbar styling */
 header {
     background-color: #ff6361;
@@ -47,7 +60,50 @@ nav {
 
 /* ------------------------------------------------------------------------- */
 /* Section styling */
+section {
+    
+}
 
+#ed_heading {
+    display: flex;
+    justify-content: center;
+    margin: 2dvh;
+}
+
+.ed_content {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    background-color:aquamarine;
+    margin: 5dvw;
+    flex: 1; /* Allow section to grow and push footer down */
+}
+
+.ed_summary p {
+    font-size: 1em;
+    color: black;
+}
+
+.ed_qual p {
+    font-size: 1em;
+    color: black;
+}
+
+.ed_projects p {
+    font-size: 1em;
+    color: black;
+}
+
+.ed_cert p {
+    font-size: 1em;
+    color: black;
+}
+
+.ed_lang p {
+    font-size: 1em;
+    color: black;
+}
+    
 
 /* -------------------------------------------------------------------------- */
 /* footer styling */
