@@ -57,10 +57,10 @@ nav {
 section {
     Display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 10dvw;
+    gap: 10dvw;
+    margin: 5dvw;
     flex: 1; /* Allow section to grow and push footer down */
-    background-color: aquamarine;
+    
 }
 
 .left_para {
@@ -68,7 +68,8 @@ section {
     flex-direction:column;
     gap: 50px;
     align-items:flex-start;
-    background-color: lightblue;
+    
+    margin:
 }
 
 .right_form {
@@ -76,9 +77,86 @@ section {
     flex-direction:column;
     gap: 50px;
     align-items:flex-start;
-    background-color:salmon;
+    
 
 }
+
+.contact_icons {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items:flex-start;
+
+}
+
+.contact_icons a {
+    color: Black; /* Light grey color for icons */
+    font-size: 1em; /* Adjust icon size as needed */
+    text-decoration: none;
+}
+
+/* Form styling */
+.form_style {
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.form_style label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input styling */
+.form_style input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Message box styling */
+.form_style input[type="text"]#Message {
+    height: 150px; /* Increase the height of the message box */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Input focus styling */
+.form_style input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.form_style input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFA600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form_style input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 /* footer styling */
 
