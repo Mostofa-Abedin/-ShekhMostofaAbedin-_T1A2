@@ -126,6 +126,17 @@ section {
 .ed_projects {
     display: flex;
     flex-direction: column;
+    
+}
+
+.ed_pro_imgs{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 40dvw;
+    height: 40dvh;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
 }
 .ed_projects h3 {
     display: flex;
