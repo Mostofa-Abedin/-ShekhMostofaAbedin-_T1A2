@@ -117,15 +117,15 @@ section {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px black;
 }
 
 /* Label styling */
 .form_style label {
     display: block;
     margin-bottom: 8px;
-    font-size: 16px;
-    color: #333;
+    font-size: 1dvw;
+    color: black;
 }
 
 /* Input styling */
@@ -136,7 +136,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 /* Message box styling */
@@ -149,7 +149,7 @@ section {
 .form_style input[type="text"]:focus {
     border-color: #007BFF;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px #007BFF
 }
 
 /* Submit button styling */
@@ -213,4 +213,98 @@ footer {
 
 .footer_right a:hover {
     color: #fff; /* White color on hover */
+}
+
+/*------------------- Media Queries for Responsive Design---------------------- */
+
+/* Mobile phones */
+@media screen and (min-width: 400px) and (max-width:820px) {
+    
+
+    .logo img {
+        width: 50px; /* Adjust the logo size as needed */
+    }
+
+    .nav_links .top_btn:last-child {
+        margin-left: 0px; /* Adjust the space between Blogs and Contact Me */
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 10px; 
+    }
+
+   .top_btn {
+    text-decoration: none;
+    color: #003F5C; 
+    font-size: 14px; 
+    transition: color 0.3s;
+   }
+
+   section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+
+   .left_para{
+    font-size: 3dvw;
+   
+   }
+
+   .right_form{
+    font-size: 2dvw;
+   }
+
+   .form_style label{
+    font-size: 3dvw;
+   }
+
+}
+
+/* Tablets */
+@media screen and (min-width: 820px) and (max-width: 1920px) {
+
+    .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2.8dvw;
+    }
+
+    .left_para{
+        font-size: 3dvw;
+       }
+    
+       .right_form{
+        font-size: 2dvw;
+       }
+
+    .form_style label{
+        font-size: 3dvw;
+       }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1920px) {
+    .logo img {
+        width: 150px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2dvw;
+    }
+
+    .left_para{
+        font-size: 1dvw;
+       }
+    
+       .right_form{
+        font-size: 1dvw;
+       }
+
+    .form_style label{
+        font-size: 1dvw;
+       }
 }

@@ -138,30 +138,9 @@ nav {
     transition: all ease 0.3s;
 }
 
-/* @media(max-width:1250px){
- 
-    .blog-box{
-        width: 300px;
-    }
-} 
-@media(max-width:1100px){
-    .blog-box{
-        width:70%;
-    }
-}
- 
-@media(max-width:550px){
-   
-    .blog-box{
-        margin: 20px 10px;
-        width: 100%;
-    }
-    #blog{
-        padding:20px;
-    }
-} */
 
-/* -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
 /* footer styling */
 
 footer {
@@ -203,4 +182,55 @@ footer {
 
 .footer_right a:hover {
     color: #fff; /* White color on hover */
+}
+
+
+/*------------------- Media Queries for Responsive Design---------------------- */
+
+/* Mobile phones */
+@media screen and (min-width: 400px) and (max-width:820px) {
+    
+
+    .logo img {
+        width: 50px; /* Adjust the logo size as needed */
+    }
+
+    .nav_links .top_btn:last-child {
+        margin-left: 0px; /* Adjust the space between Blogs and Contact Me */
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 10px; 
+    }
+
+   .top_btn {
+    text-decoration: none;
+    color: #003F5C; 
+    font-size: 14px; 
+    transition: color 0.3s;
+   }
+}
+
+/* Tablets */
+@media screen and (min-width: 820px) and (max-width: 1920px) {
+
+    .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2.8dvw;
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1920px) {
+    .logo img {
+        width: 150px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2dvw;
+    }
 }
