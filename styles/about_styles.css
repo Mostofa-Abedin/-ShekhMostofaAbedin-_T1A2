@@ -9,9 +9,18 @@
 
 body {
     font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    flex: 1;
+    
       
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar styling */
@@ -38,6 +47,7 @@ nav {
 .logo :hover {
     transform: rotate(360deg);
     transition: 4s;
+   
 }
 
 .nav_links {
@@ -57,7 +67,10 @@ nav {
 }
 
 .top_btn:hover {
-    color: #0056b3; /* Adjust the hover color as needed */
+    transform:scale(1.2,1.2);
+    text-shadow: 0 0 5px #FFA600;
+    transition: 0.5s;
+    color: blue;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -102,13 +115,13 @@ nav {
 
 .welcome_msg {
     color: black;
-    font-size: 2em;
+    font-size: 2vw;
     
 }
 
 .intro_para {
     color: black;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     
 }
 
@@ -213,4 +226,51 @@ footer {
 
 .footer_right a:hover {
     color: #fff; /* White color on hover */
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Large screens */
+@media screen and (max-width: 1200px) {
+    .about_container {
+        background-color: red;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 820px) {
+    .about_container {
+        background-color: blue;
+    }
+    
+    .welcome_msg {
+        color: black;
+        font-size: 4vw;
+        
+    }
+
+    .intro_para {
+        color: black;
+        font-size: 3vw;
+        
+    }
+    
+    .me_img {
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+    }
+
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .about_container {
+        background-color: violet;
+    }
+
+    body{
+        height: 100vh;
+    }
 }
