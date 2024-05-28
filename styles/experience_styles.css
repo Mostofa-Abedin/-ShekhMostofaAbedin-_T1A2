@@ -73,8 +73,8 @@ section {
 #exp_heading {
     display: flex;
     justify-content: center;
-    margin: 2dvh;
-    font-size: 2dvw;
+    margin: 5dvh;
+    font-size: 4dvw;
 }
 
 .exp_content {
@@ -86,7 +86,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px black;
     flex: 1; /* Allow section to grow and push footer down */
 }
 
@@ -96,7 +96,7 @@ section {
     color:#FF6361;
 }
 .exp_summary  {
-    font-size: 1.5em;
+    font-size: 3dvw;
     color: black;
 }
 
@@ -106,7 +106,7 @@ section {
     color:#FF6361;
 }
 .pro_exp  {
-    font-size: 1.5em;
+    font-size: 3dvw;
     color: black;
 }
 
@@ -127,8 +127,7 @@ section {
 .resume a {
     text-decoration: none;
     color: black;
-    
-    font-size: 1.5em;
+    font-size: 4dvw;
 }
 
 .resume :hover {
@@ -184,40 +183,8 @@ footer {
 
 /*------------------- Media Queries for Responsive Design---------------------- */
 
-/* Desktop screens */
-@media screen and (max-width: 1920px) {
-    
-
-    .top_btn {
-        text-decoration: none;
-        color: #003F5C; /* Dark blue color */
-        font-size: 30px; /* Adjust the font size as needed */
-        transition: color 0.3s;
-    }
-
-    .logo img {
-        width: 150px; /* Adjust the logo size as needed */
-    }
-}
-
-/* Tablets */
-@media screen and (max-width: 820px) {
-    
-    .top_btn {
-        text-decoration: none;
-        color: #003F5C; 
-        font-size: 20px; 
-        transition: color 0.3s;
-    }
-    
-    .logo img {
-        width: 100px; /* Adjust the logo size as needed */
-    }
-}
-
-
 /* Mobile phones */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width:820px) {
     
 
     .logo img {
@@ -230,7 +197,7 @@ footer {
 
     .nav_links {
         display: flex;
-        gap: 10px; /* Space between each nav item */
+        gap: 10px; 
     }
 
    .top_btn {
@@ -239,40 +206,37 @@ footer {
     font-size: 14px; 
     transition: color 0.3s;
    }
-
-   .me_img {
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
 }
 
-.hire_me_btn {
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #FF6361;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-    
+/* Tablets */
+@media screen and (min-width: 820px) and (max-width: 1920px) {
+
+    .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2.8dvw;
+    }
 }
 
-.exp_btn_2 {
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #FFA600;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+/* Desktop screens */
+@media screen and (min-width: 1920px) {
+    .logo img {
+        width: 150px; /* Adjust the logo size as needed */
+    }
 
+    .top_btn {
+        font-size: 2dvw;
+    }
+
+    .exp_summary  {
+        font-size: 2dvw;
+        color: black;
+    }
+
+    .pro_exp  {
+        font-size: 2dvw;
+        color: black;
+    }
 }
