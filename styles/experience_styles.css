@@ -57,7 +57,10 @@ nav {
 }
 
 .top_btn:hover {
-    color: #0056b3; /* Adjust the hover color as needed */
+    transform:scale(1.2,1.2);
+    text-shadow: 0 0 5px #FFA600;
+    transition: 0.5s;
+    color: blue;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -71,6 +74,7 @@ section {
     display: flex;
     justify-content: center;
     margin: 2dvh;
+    font-size: 2dvw;
 }
 
 .exp_content {
@@ -86,21 +90,23 @@ section {
     flex: 1; /* Allow section to grow and push footer down */
 }
 
-.exp_summary h3 {
+.exp_summary h2 {
     display: flex;
     justify-content: center;
+    color:#FF6361;
 }
-.exp_summary p {
-    font-size: 1em;
+.exp_summary  {
+    font-size: 1.5em;
     color: black;
 }
 
-.pro_exp h3 {
+.pro_exp h2 {
     display: flex;
     justify-content: center;
+    color:#FF6361;
 }
-.pro_exp p {
-    font-size: 1em;
+.pro_exp  {
+    font-size: 1.5em;
     color: black;
 }
 
@@ -173,4 +179,100 @@ footer {
 
 .footer_right a:hover {
     color: #fff; /* White color on hover */
+}
+
+
+/*------------------- Media Queries for Responsive Design---------------------- */
+
+/* Desktop screens */
+@media screen and (max-width: 1920px) {
+    
+
+    .top_btn {
+        text-decoration: none;
+        color: #003F5C; /* Dark blue color */
+        font-size: 30px; /* Adjust the font size as needed */
+        transition: color 0.3s;
+    }
+
+    .logo img {
+        width: 150px; /* Adjust the logo size as needed */
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 820px) {
+    
+    .top_btn {
+        text-decoration: none;
+        color: #003F5C; 
+        font-size: 20px; 
+        transition: color 0.3s;
+    }
+    
+    .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+    }
+}
+
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    
+
+    .logo img {
+        width: 50px; /* Adjust the logo size as needed */
+    }
+
+    .nav_links .top_btn:last-child {
+        margin-left: 0px; /* Adjust the space between Blogs and Contact Me */
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 10px; /* Space between each nav item */
+    }
+
+   .top_btn {
+    text-decoration: none;
+    color: #003F5C; 
+    font-size: 14px; 
+    transition: color 0.3s;
+   }
+
+   .me_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.hire_me_btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF6361;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.exp_btn_2 {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #FFA600;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 }
