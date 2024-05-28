@@ -239,4 +239,8 @@ footer {
         font-size: 2dvw;
         color: black;
     }
+
+    .resume a {
+        font-size: 3dvw;
+    }
 }

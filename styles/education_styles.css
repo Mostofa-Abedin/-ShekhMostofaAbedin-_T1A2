@@ -76,6 +76,7 @@ section {
     display: flex;
     justify-content: center;
     margin: 2dvh;
+    font-size: 4dvw;
 }
 
 .ed_content {
@@ -96,10 +97,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 3dvw;
 }
 
-.ed_summary p {
-    font-size: 1em;
+.ed_summary p  {
+    
     color: black;
 }
 
@@ -108,6 +110,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 3dvw;
 }
  #usyd_logo img {
     width: 15dvw;
@@ -119,13 +122,14 @@ section {
     flex-direction: row ;
     gap: 20px
  }
-.ed_qual p {
-    font-size: 1em;
+.ed_qual p{
     color: black;
+    font-size: 3dvw;
 }
 .ed_projects {
     display: flex;
     flex-direction: column;
+    font-size: 3dvw;
     
 }
 
@@ -134,7 +138,7 @@ section {
     flex-direction: row;
     align-self: center;
     width: 40dvw;
-    height: 40dvh;
+    height: 30dvh;
     border-radius: 15px;
     box-shadow: 0 0 5px black;
 }
@@ -152,7 +156,7 @@ section {
 }
 
 .ed_projects p {
-    font-size: 1em;
+    font-size: 3dvw;
     color: black;
 }
 
@@ -175,11 +179,16 @@ section {
     gap: 20px
  }
 #EA_logo img {
-    width: 15dvw;
-    height: 15dvh;
+    width: 14dvw;
+    height: 14dvh;
  }
+
+ .ed_cert {
+    font-size: 3dvw;
+}
+ 
 .ed_cert p {
-    font-size: 1em;
+    font-size: 3dvw;
     color: black;
 }
 
@@ -187,13 +196,14 @@ section {
     display: flex;
     justify-content: center;
 }
-.ed_lang p {
-    font-size: 1em;
-    color: black;
+
+.ed_lang {
+    font-size: 3dvw;
 }
 
 .list_lang {
     margin: 2dvw;
+    font-size: 3dvw;
 }
     
 
@@ -239,4 +249,95 @@ footer {
 
 .footer_right a:hover {
     color: #fff; /* White color on hover */
+}
+
+
+/*------------------- Media Queries for Responsive Design---------------------- */
+
+/* Mobile phones */
+@media screen and (min-width: 400px) and (max-width:820px) {
+    
+
+    .logo img {
+        width: 50px; /* Adjust the logo size as needed */
+    }
+
+    .nav_links .top_btn:last-child {
+        margin-left: 0px; /* Adjust the space between Blogs and Contact Me */
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 10px; 
+    }
+
+   .top_btn {
+    text-decoration: none;
+    color: #003F5C; 
+    font-size: 14px; 
+    transition: color 0.3s;
+   }
+}
+
+/* Tablets */
+@media screen and (min-width: 820px) and (max-width: 1920px) {
+
+    .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2.8dvw;
+    }
+}
+
+/* Desktop screens */
+
+@media screen and (min-width: 1920px) {
+    .logo img {
+        width: 150px; /* Adjust the logo size as needed */
+    }
+
+    .top_btn {
+        font-size: 2dvw;
+    }
+
+    .ed_pro_imgs{
+
+        width: 40dvw;
+        height: 40dvh;
+    }
+
+    .ed_summary{
+        font-size: 2dvw;
+    }
+
+    .ed_qual{
+        font-size: 2dvw;
+    }
+
+    .qual_sec p{
+        font-size: 2dvw;
+    }
+
+    .ed_projects{
+        font-size: 2dvw;
+    }
+
+    .ed_cert{
+        font-size: 2dvw;
+        
+    }
+
+    .Cert_1 p{
+        font-size: 2dvw;
+    }
+
+    .ed_lang{
+        font-size: 2dvw;
+    }
+
+    .list_lang {
+        font-size: 2dvw;
+    }
 }
