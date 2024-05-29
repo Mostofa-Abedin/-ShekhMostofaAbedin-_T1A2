@@ -48,7 +48,7 @@ nav {
 
 .nav_links {
     display: flex;
-    gap: 20px; /* Space between each nav item */
+    gap: 40px; /* Space between each nav item */
 }
 
 .nav_links .top_btn:last-child {
@@ -63,8 +63,12 @@ nav {
 }
 
 .top_btn:hover {
-    color: #0056b3; /* Adjust the hover color as needed */
+    transform:scale(1.2,1.2);
+    text-shadow: 0 0 5px #FFA600;
+    transition: 0.5s;
+    color: blue;
 }
+
 
 /* ------------------------------------------------------------------------- */
 /* Section styling */
@@ -295,11 +299,11 @@ footer {
 
 @media screen and (min-width: 1920px) {
     .logo img {
-        width: 150px; /* Adjust the logo size as needed */
+        width: 150px; 
     }
 
     .top_btn {
-        font-size: 2dvw;
+        font-size: 1.8dvw;
     }
 
     .ed_pro_imgs{

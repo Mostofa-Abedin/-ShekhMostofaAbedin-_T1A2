@@ -33,7 +33,7 @@ nav {
 
 .nav_links {
     display: flex;
-    gap: 20px; /* Space between each nav item */
+    gap: 40px; /* Space between each nav item */
 }
 
 .nav_links .top_btn:last-child {
