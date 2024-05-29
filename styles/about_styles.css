@@ -25,11 +25,15 @@ html, body {
 
 /* Navbar styling */
 header {
-    background-color: #ff6361;
+    background: linear-gradient(20deg, #ff6361, #ffa600);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    
+    
+    
+    
 }
 
 nav {
@@ -82,8 +86,9 @@ nav {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px black;
     flex-grow: 1;
+    font-size: 1rem; /* Base font size for scaling */
     
 
     display: flex;
@@ -306,12 +311,12 @@ footer {
     }
 
     .welcome_msg{
-        font-size: 5dvw;
-
+        font-size: 1.5em; /*5dvw*/
+        
    }
 
    .intro_para{
-        font-size: 3dvw;
+        font-size: 1.2em; /*3dvw*/
         
    }
 
@@ -366,12 +371,13 @@ footer {
     }
 
     .welcome_msg{
-        font-size: 3dvw;
+        font-size: 3em;
 
    }
 
    .intro_para{
-        font-size: 2dvw;
+        font-size: 2em;
+        
         
    }
 

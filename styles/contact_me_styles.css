@@ -22,7 +22,7 @@ html, body {
 
 /* Navbar styling */
 header {
-    background-color: #ff6361;
+    background: linear-gradient(20deg, #ff6361, #ffa600);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,6 +254,7 @@ footer {
 
    .right_form{
     font-size: 2dvw;
+    margin-top: 20px;
    }
 
    .form_style label{
