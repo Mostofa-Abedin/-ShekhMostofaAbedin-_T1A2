@@ -125,6 +125,19 @@ nav {
     
 }
 
+.highlight_1 {
+    color: #003f5c;
+}
+
+.highlight_2 {
+    color: #ff6361;
+}
+
+.highlight_3 {
+    color: #ffa600;
+}
+
+
 .profile_pic {
     display: flex;
     flex-direction: row;
