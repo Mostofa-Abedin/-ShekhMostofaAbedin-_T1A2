@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
 }
 
 .logo img {
@@ -52,13 +52,13 @@ nav {
 }
 
 .nav_links .top_btn:last-child {
-    margin-left: 40px; /* Adjust the space between Blogs and Contact Me */
+    margin-left: 40px; 
 }
 
 .top_btn {
     text-decoration: none;
-    color: #003F5C; /* Dark blue color */
-    font-size: 20px; /* Adjust the font size as needed */
+    color: #003F5C; 
+    font-size: 20px; 
     transition: color 0.3s;
 }
 
@@ -226,7 +226,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
     color: white;
 }
 
@@ -242,12 +242,12 @@ footer {
 
 .footer_right {
     display: flex;
-    gap: 10px; /* Adjust spacing between icons */
+    gap: 10px; 
 }
 
 .footer_right a {
-    color: #ccc; /* Light grey color for icons */
-    font-size: 24px; /* Adjust icon size as needed */
+    color: #ccc; 
+    font-size: 24px; 
     text-decoration: none;
 }
 
@@ -259,6 +259,7 @@ footer {
 /*------------------- Media Queries for Responsive Design---------------------- */
 
 /* Mobile phones */
+
 @media screen and (min-width: 400px) and (max-width:820px) {
     
 
@@ -284,6 +285,7 @@ footer {
 }
 
 /* Tablets */
+
 @media screen and (min-width: 820px) and (max-width: 1920px) {
 
     .logo img {
@@ -291,7 +293,46 @@ footer {
     }
 
     .top_btn {
-        font-size: 2.8dvw;
+        font-size: 1.8dvw;
+    }
+
+    .ed_pro_imgs{
+
+        width: 40dvw;
+        height: 40dvh;
+    }
+
+    .ed_summary{
+        font-size: 2dvw;
+    }
+
+    .ed_qual{
+        font-size: 2dvw;
+    }
+
+    .qual_sec p{
+        font-size: 2dvw;
+    }
+
+    .ed_projects{
+        font-size: 2dvw;
+    }
+
+    .ed_cert{
+        font-size: 2dvw;
+        
+    }
+
+    .Cert_1 p{
+        font-size: 2dvw;
+    }
+
+    .ed_lang{
+        font-size: 2dvw;
+    }
+
+    .list_lang {
+        font-size: 2dvw;
     }
 }
 

@@ -13,7 +13,7 @@ Link to git repository: https://github.com/Mostofa-Abedin/-ShekhMostofaAbedin-_T
 ### Built with
 
 HTML and CSS Written using VSCode.
-
+Deployed using netlify. 
 
 # Research and Design Process
 

@@ -5,38 +5,32 @@
     box-sizing: border-box;
 }
 
-/* global font */
+/* Assign a global font */
 
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     height: 100%;
-    flex: 1;
-    
-    
-    
+    flex: 1;   
 }
 
-
+/* Had issues with footer not staying down. Made sure body takes up entire avilable space */
 
 html, body {
-    height: 100%; /* Ensure html and body take full height */
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
 
 /* Navbar styling */
+
 header {
     background: linear-gradient(20deg, #ff6361, #ffa600);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
-    
-    
-    
-    
+    padding: 10px 0;    
 }
 
 nav {
@@ -46,11 +40,14 @@ nav {
     width: 80%; 
 }
 
+/* Header logo styling and sizing */
+
 .logo img {
-    width: 100px; /* Adjust the logo size as needed */
+    width: 100px; 
 }
 
-/* Add some animation to the header logo */
+/* Add some hover animation to the header logo */
+
 .logo :hover {
     transform: rotate(360deg);
     transition: 4s;
@@ -66,13 +63,16 @@ nav {
     margin-left: 40px; /* Adjust the space between Blogs and Contact Me */
 }
 
+/* Nav button styling */
+
 .top_btn {
     text-decoration: none;
-    color: #003F5C; /* Dark blue color */
-    font-size: 20px; /* Adjust the font size as needed */
+    color: #003F5C; 
+    font-size: 20px; 
     transition: color 0.3s;
 }
 
+/* Nav buttons hover animation */
 .top_btn:hover {
     transform:scale(1.2,1.2);
     text-shadow: 0 0 5px #FFA600;
@@ -212,7 +212,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
     color: white;
 }
 
@@ -223,28 +223,29 @@ footer {
 
 .footer_left .fname, .footer_left .lname {
     margin-left: 10px;
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 20px; 
 }
 
 .footer_right {
     display: flex;
-    gap: 10px; /* Adjust spacing between icons */
+    gap: 10px;
 }
 
 .footer_right a {
-    color: #ccc; /* Light grey color for icons */
-    font-size: 24px; /* Adjust icon size as needed */
+    color: #ccc; 
+    font-size: 24px; 
     text-decoration: none;
 }
 
 .footer_right a:hover {
-    color: #fff; /* White color on hover */
+    color: #fff; 
 }
 
 
 /*------------------- Media Queries for Responsive Design---------------------- */
 
 /* Mobile phones */
+
 @media screen and (min-width: 400px) and (max-width:820px) {
     
 
@@ -317,10 +318,11 @@ footer {
 }
 
 /* Tablets */
+
 @media screen and (min-width: 820px) and (max-width: 1920px) {
 
     .logo img {
-        width: 100px; /* Adjust the logo size as needed */
+        width: 100px; 
     }
 
     .top_btn {
@@ -328,13 +330,12 @@ footer {
     }
 
     .welcome_msg{
-        font-size: 1.5em; /*5dvw*/
+        font-size: 1.5em; 
         
    }
 
    .intro_para{
-        font-size: 1.2em; /*3dvw*/
-        
+        font-size: 1.2em; 
         
    }
 
@@ -342,7 +343,7 @@ footer {
         width: 300px;
         height: 300px;
         border-radius: 200px;
-        }
+    }
 
     .hire_me_btn {
         border: none;
@@ -356,7 +357,6 @@ footer {
         font-size: 2dvw;
         margin: 4px 2px;
         cursor: pointer;
-        
     }
     
     .exp_btn_2 {
@@ -374,11 +374,8 @@ footer {
     }
 }
 
-
-    
-    
-
 /* Desktop screens */
+
 @media screen and (min-width: 1920px) {
     .logo img {
         width: 150px; /* Adjust the logo size as needed */
@@ -390,21 +387,17 @@ footer {
 
     .welcome_msg{
         font-size: 3em;
-
-   }
+    }
 
    .intro_para{
-        font-size: 2em;
-        
-        
-        
-   }
+        font-size: 2em;        
+    }
 
     .me_img {
         width: 400px;
         height: 400px;
         border-radius: 200px;
-        }
+     }
 
     .hire_me_btn {
         border: none;
